@@ -1206,12 +1206,12 @@ footer ul {
         max-height: 40rem;
         margin-right: 0rem;
     }
-    .elena2 img {
-        width: 35rem;
-        height: 40rem;
-        max-width: 35rem;
-        max-height: 40rem;
-    }
+    // .elena2 img {
+    //     width: 35rem;
+    //     height: 40rem;
+    //     max-width: 35rem;
+    //     max-height: 40rem;
+    // }
     .spa-pic{
         width: 30rem;
         height: 50rem;
@@ -1223,11 +1223,12 @@ footer ul {
 
 /*Media query for small and mid sized phones section  */
 
+
 @media only screen and (max-width: 425px) {
 
-    body{
-        overflow-x: hidden;
-    }
+    // body{
+    //     overflow-x: hidden;
+    // }
     
     .doodles2 {
         display: none;
@@ -1236,7 +1237,7 @@ footer ul {
         display: none;
     }
     .intro-text2 h1 {
-        color: black;
+        color: white;
         font-size: 5.6rem;
         text-align: center;
         font-family: 'Quicksand', sans-serif;
@@ -1299,6 +1300,52 @@ footer ul {
     }
     .banner p {
         font-size: 4rem;
+        text-align: center;
+    }
+    .elena1 img {
+        margin-right: 0rem;
+        max-width: 30rem;
+        max-height: 50rem;
+    }
+    .elena2 img {
+        margin-right: 0rem;
+        max-width: 30rem;
+        max-height: 50rem;
+        margin-top: 4rem;
+    }
+    .elena3 img {
+        margin-right: 0rem;
+        max-width: 30rem;
+        max-height: 50rem;
+        margin-top: 10rem;
+        margin-bottom: 4rem;
+    }
+    .elena4 img {
+        margin-right: 0rem;
+        max-width: 30rem;
+        max-height: 50rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    .elena5 img {
+        margin-right: 0rem;
+        max-width: 30rem;
+        max-height: 50rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    .info{
+        margin-bottom: 4rem;
+        margin-top: 4rem;
+    }
+    .info-section .info-text{
+        margin-top: 4rem;
+    }
+    .info-section2 h3{
+        margin-top: 4rem;
+    }
+    .europe-title{
+        margin-right: 0rem;
     }
 }
 
