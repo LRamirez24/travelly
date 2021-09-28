@@ -41,7 +41,7 @@ h1 {
     font-size: 6.4rem;
     letter-spacing: 0.1rem;
     color: white;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 h2 {
@@ -246,7 +246,7 @@ nav li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10rem;
+    margin-top: 0rem;
     margin-bottom: 11rem;
     video{
         position: absolute;
@@ -261,6 +261,7 @@ nav li a:hover {
     .luis-info {
         .title {
             text-align: center;
+          
         }
         .name {
             color: white;
@@ -271,18 +272,21 @@ nav li a:hover {
     }
     .btn-booknow {
         padding: 1.5rem;
-        background-color: transparent;
+        display: flex;
+        flex-direction: row;
         justify-content: center;
+        align-items: center;
+        background-color: transparent;
         width: 15rem;
         text-align: center;
         color: white;
         text-decoration: none;
-        margin-top: 4rem;
+        // margin-top: 10rem;
         cursor: pointer;
         font-size: 1.6rem;
         font-family: 'Quicksand', sans-serif;
         border: 1px solid white;
-        transition-duration: 0.4s;
+        transition-duration: 1s;
         &:hover {
             background-color: white;
             color: black;
@@ -536,15 +540,20 @@ hr.line{
 .luis-info {
     .title {
         margin-bottom: 2rem;
-        font-size: 7rem;
+        font-size: 14rem;
+        font-weight: bolder;
     }
 }
 
 .scroll {
-    width: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 20rem;
+    width: 15rem;
+    // margin-top: 2rem;
+    // margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
 }
 
 .circle {
@@ -623,6 +632,121 @@ hr.line{
 
 
 
+.section{
+    // width:10%;
+    // margin:0 auto;
+    // height:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    margin-left: 6rem;
+    
+    padding:0;
+    position:relative;
+  }
+
+  .section2{
+    // width:10%;
+    // margin:0 auto;
+    // height:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    margin-left: 6rem;
+    padding:0;
+    position:relative;
+  }
+  
+  .hscroll-line {
+      bottom:30px;
+      right: 50%;
+      height: 2px;
+      position: absolute;
+      overflow: hidden;
+    width:10rem;
+    transform: rotate(90deg);
+    tranform-origin:50% 50%;
+   
+  }
+
+  .hscroll-line2 {
+    bottom:30px;
+    right: 50%;
+    height: 2px;
+    position: absolute;
+    overflow: hidden;
+  width:10rem;
+  transform: rotate(90deg);
+  tranform-origin:50% 50%;
+ 
+}
+  
+  
+  .hscroll-line::before,
+  .hscroll-line::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: ""
+  }
+  
+  .hscroll-line:before {
+      background: hsla(327, 100%, 84%, 0.863);
+  }
+  
+  .hscroll-line::after {
+      background: #000000;
+      animation: move 3s infinite
+  }
+  
+  @keyframes move {
+      0% {
+          transform: translate3d(-200%, 0, 0)
+      }
+      60% {
+          transform: translate3d(100%, 0, 0)
+      }
+      100% {
+          transform: translate3d(100%, 0, 0)
+      }
+  }
+
+  .hscroll-line2::before,
+  .hscroll-line2::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: ""
+  }
+  
+  .hscroll-line2:before {
+      background: hsla(327, 100%, 84%, 0.863);
+  }
+  
+  .hscroll-line2::after {
+      background: #000000;
+      animation: move2 3s infinite
+  }
+  
+  @keyframes move2 {
+      0% {
+          transform: translate3d(-200%, 0, 0)
+      }
+      60% {
+          transform: translate3d(100%, 0, 0)
+      }
+      100% {
+          transform: translate3d(100%, 0, 0)
+      }
+  }
+
+
 .elena img:hover {
     transform: scale(0.9, 0.9);
     transition: all 0.4s ease-in-out;
@@ -694,6 +818,37 @@ hr.line{
     // box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
     // border-radius: 40px;
 }
+
+.elena1 img:hover {
+    transform: scale(0.9, 0.9);
+    transition: all 0.4s ease-in-out;
+    // box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+    // border-radius: 40px;
+}
+
+.elena3 img:hover {
+    transform: scale(0.9, 0.9);
+    transition: all 0.4s ease-in-out;
+    // box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+    // border-radius: 40px;
+}
+
+.elena4 img:hover {
+    transform: scale(0.9, 0.9);
+    transition: all 0.4s ease-in-out;
+    // box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+    // border-radius: 40px;
+}
+
+.elena5 img:hover {
+    transform: scale(0.9, 0.9);
+    transition: all 0.4s ease-in-out;
+    // box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+    // border-radius: 40px;
+}
+
+
+
 
 .europe-title{
     color: black;
@@ -963,6 +1118,7 @@ footer ul {
             font-family: 'Quicksand', sans-serif;
             border: 1px solid white;
             transition-duration: 0.4s;
+            
             &:hover {
                 background-color: white;
                 color: black;
@@ -973,7 +1129,7 @@ footer ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: 30rem;
+        margin-top: 10rem;
         margin-bottom: 9rem;
         .luis-info {
             align-items: center;
@@ -992,8 +1148,10 @@ footer ul {
                 color: black;
             }
             .scroll {
+                display: flex;
                 justify-self: center;
                 align-self: center;
+                width: 15rem;
             }
         }
     }
@@ -1218,6 +1376,9 @@ footer ul {
         // max-height: 50rem;
         // max-width: 30rem;
     }
+    .luis-info .title{
+        font-size: 6rem;
+    }
 }
 
 
@@ -1229,6 +1390,8 @@ footer ul {
     // body{
     //     overflow-x: hidden;
     // }
+
+  
     
     .doodles2 {
         display: none;
@@ -1244,9 +1407,10 @@ footer ul {
     }
     .hero {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 10rem;
         .luis-info {
             text-align: center;
             .luis-bio {
@@ -1254,6 +1418,9 @@ footer ul {
             }
             .btn-booknow {
                 margin-left: 0rem;
+            }
+            .title{
+                font-size: 6rem;
             }
         }
         .scroll {
@@ -1269,7 +1436,7 @@ footer ul {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        margin-top: 4rem;
+        margin-top: 10rem;
         .info-text {
             margin-left: 0rem;
             // margin-top: 12rem;
@@ -1277,6 +1444,9 @@ footer ul {
         .info-pic {
             margin-right: 0rem;
         }
+    }
+    h3{
+        font-size: 4rem;
     }
     .info-section2 {
         display: flex;
@@ -1302,11 +1472,17 @@ footer ul {
         font-size: 4rem;
         text-align: center;
     }
+    .europe-title{
+        text-align: center;
+    }
     .elena1 img {
         margin-right: 0rem;
         max-width: 30rem;
         max-height: 50rem;
+        margin-bottom: 10rem;
     }
+    
+  
     .elena2 img {
         margin-right: 0rem;
         max-width: 30rem;
@@ -1375,7 +1551,7 @@ footer ul {
 @media only screen and (max-width: 375px) {
     .hero {
         margin-bottom: 0rem;
-        margin-top: 4rem;
+        margin-top: 15rem;
     }
     .trip-info {
         margin-top: 4rem;
@@ -1577,7 +1753,8 @@ footer ul {
     padding: 4rem;
     font-family: 'Six Caps', sans-serif;
     min-height: 50vh;
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
    h4{
        font-size: 5rem;
    }
@@ -1589,8 +1766,9 @@ footer ul {
 .news-line{
   background: black;
   height: 0.2rem;
-  margin: 2rem 0rem;
+  margin: 4rem 0rem;
   width: 100%;
+  margin-bottom: 4rem;
 }
 
 .dates-section{
@@ -1598,8 +1776,6 @@ footer ul {
   // padding: 0rem .3rem;
   transition-duration: 0.4s;
   &:hover{
-      background: rgb(231, 133, 133);
+      background: hsla(327, 100%, 84%, 0.863);
   }
 }
-
-

@@ -38,7 +38,7 @@ h1 {
   font-size: 6.4rem;
   letter-spacing: 0.1rem;
   color: white;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 h2 {
@@ -253,7 +253,7 @@ nav li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 10rem;
+  margin-top: 0rem;
   margin-bottom: 11rem;
 }
 
@@ -282,21 +282,30 @@ nav li a:hover {
 
 .hero .btn-booknow {
   padding: 1.5rem;
-  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
   width: 15rem;
   text-align: center;
   color: white;
   text-decoration: none;
-  margin-top: 4rem;
   cursor: pointer;
   font-size: 1.6rem;
   font-family: 'Quicksand', sans-serif;
   border: 1px solid white;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .hero .btn-booknow:hover {
@@ -581,14 +590,25 @@ hr.line {
 
 .luis-info .title {
   margin-bottom: 2rem;
-  font-size: 7rem;
+  font-size: 14rem;
+  font-weight: bolder;
 }
 
 .scroll {
-  width: 3rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  margin-left: 20rem;
+  width: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .circle {
@@ -688,6 +708,162 @@ hr.line {
   transition: all 0.4s ease-in-out;
 }
 
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4rem;
+  margin-left: 6rem;
+  padding: 0;
+  position: relative;
+}
+
+.section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10rem;
+  margin-left: 6rem;
+  padding: 0;
+  position: relative;
+}
+
+.hscroll-line {
+  bottom: 30px;
+  right: 50%;
+  height: 2px;
+  position: absolute;
+  overflow: hidden;
+  width: 10rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  tranform-origin: 50% 50%;
+}
+
+.hscroll-line2 {
+  bottom: 30px;
+  right: 50%;
+  height: 2px;
+  position: absolute;
+  overflow: hidden;
+  width: 10rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  tranform-origin: 50% 50%;
+}
+
+.hscroll-line::before,
+.hscroll-line::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+}
+
+.hscroll-line:before {
+  background: rgba(255, 173, 218, 0.863);
+}
+
+.hscroll-line::after {
+  background: #000000;
+  -webkit-animation: move 3s infinite;
+          animation: move 3s infinite;
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translate3d(-200%, 0, 0);
+            transform: translate3d(-200%, 0, 0);
+  }
+  60% {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: translate3d(-200%, 0, 0);
+            transform: translate3d(-200%, 0, 0);
+  }
+  60% {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+}
+
+.hscroll-line2::before,
+.hscroll-line2::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+}
+
+.hscroll-line2:before {
+  background: rgba(255, 173, 218, 0.863);
+}
+
+.hscroll-line2::after {
+  background: #000000;
+  -webkit-animation: move2 3s infinite;
+          animation: move2 3s infinite;
+}
+
+@-webkit-keyframes move2 {
+  0% {
+    -webkit-transform: translate3d(-200%, 0, 0);
+            transform: translate3d(-200%, 0, 0);
+  }
+  60% {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes move2 {
+  0% {
+    -webkit-transform: translate3d(-200%, 0, 0);
+            transform: translate3d(-200%, 0, 0);
+  }
+  60% {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+}
+
 .elena img:hover {
   -webkit-transform: scale(0.9, 0.9);
           transform: scale(0.9, 0.9);
@@ -749,6 +925,34 @@ hr.line {
 }
 
 .elena2 img:hover {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.elena1 img:hover {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.elena3 img:hover {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.elena4 img:hover {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.elena5 img:hover {
   -webkit-transform: scale(0.9, 0.9);
           transform: scale(0.9, 0.9);
   -webkit-transition: all 0.4s ease-in-out;
@@ -1094,7 +1298,7 @@ footer ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 30rem;
+    margin-top: 10rem;
     margin-bottom: 9rem;
   }
   .hero .luis-info {
@@ -1125,11 +1329,13 @@ footer ul {
     color: black;
   }
   .hero .luis-info .scroll {
-    -ms-grid-column-align: center;
-        justify-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-self: center;
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
         align-self: center;
+    width: 15rem;
   }
   .me {
     width: 35rem;
@@ -1357,6 +1563,9 @@ footer ul {
     width: 30rem;
     height: 50rem;
   }
+  .luis-info .title {
+    font-size: 6rem;
+  }
 }
 
 /*Media query for small and mid sized phones section  */
@@ -1378,15 +1587,16 @@ footer ul {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 10rem;
   }
   .hero .luis-info {
     text-align: center;
@@ -1396,6 +1606,9 @@ footer ul {
   }
   .hero .luis-info .btn-booknow {
     margin-left: 0rem;
+  }
+  .hero .luis-info .title {
+    font-size: 6rem;
   }
   .hero .scroll {
     margin-left: 0;
@@ -1418,13 +1631,16 @@ footer ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 4rem;
+    margin-top: 10rem;
   }
   .info-section .info-text {
     margin-left: 0rem;
   }
   .info-section .info-pic {
     margin-right: 0rem;
+  }
+  h3 {
+    font-size: 4rem;
   }
   .info-section2 {
     display: -webkit-box;
@@ -1468,10 +1684,14 @@ footer ul {
     font-size: 4rem;
     text-align: center;
   }
+  .europe-title {
+    text-align: center;
+  }
   .elena1 img {
     margin-right: 0rem;
     max-width: 30rem;
     max-height: 50rem;
+    margin-bottom: 10rem;
   }
   .elena2 img {
     margin-right: 0rem;
@@ -1541,7 +1761,7 @@ footer ul {
 @media only screen and (max-width: 375px) {
   .hero {
     margin-bottom: 0rem;
-    margin-top: 4rem;
+    margin-top: 15rem;
   }
   .trip-info {
     margin-top: 4rem;
@@ -1762,7 +1982,8 @@ footer ul {
   padding: 4rem;
   font-family: 'Six Caps', sans-serif;
   min-height: 50vh;
-  margin-bottom: 10rem;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
 }
 
 .news h4 {
@@ -1776,8 +1997,9 @@ footer ul {
 .news-line {
   background: black;
   height: 0.2rem;
-  margin: 2rem 0rem;
+  margin: 4rem 0rem;
   width: 100%;
+  margin-bottom: 4rem;
 }
 
 .dates-section {
@@ -1787,6 +2009,6 @@ footer ul {
 }
 
 .dates-section:hover {
-  background: #e78585;
+  background: rgba(255, 173, 218, 0.863);
 }
 /*# sourceMappingURL=style.css.map */

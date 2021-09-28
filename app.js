@@ -54,6 +54,7 @@ gsap.from(".transition2", {
     scrollTrigger: {
         trigger: ".transition2",
         start: "top center",
+        toggleActions: "restart none reverse none",
        
         end: "top 100px",
     }
@@ -68,6 +69,7 @@ gsap.from(".transition3", {
     scrollTrigger: {
         trigger: ".transition3",
         start: "top center",
+        toggleActions: "restart none reverse none",
     
         end: "top 100px",
     }
@@ -82,6 +84,7 @@ gsap.from(".transition4", {
     scrollTrigger: {
         trigger: ".transition4",
         start: "top center",
+        toggleActions: "restart none reverse none",
         end: "top 100px",
     }
 });
@@ -113,6 +116,7 @@ gsap.from(".transition6", {
   scrollTrigger: {
       trigger: ".transition6",
       start: "top center",
+      toggleActions: "restart none reverse none",
       end: "top 100px",
   }
 });
@@ -126,9 +130,56 @@ gsap.from(".transition7", {
   scrollTrigger: {
       trigger: ".transition7",
       start: "top center",
+      toggleActions: "restart none reverse none",
       end: "top 100px",
   }
 });
+
+
+gsap.from(".transition-pic", {
+  x: 200,
+  y: 100,
+  opacity: 0,
+  stagger: 0.8,
+  rotation: 0,
+  scrollTrigger: {
+      trigger: ".transition-pic",
+      start: "top center",
+      toggleActions: "restart none reverse none",
+      end: "top 100px",
+  }
+});
+
+
+
+gsap.from(".transition8", {
+  x: -100,
+  y: 100,
+  opacity: 0,
+  stagger: 0.8,
+  rotation: 0,
+  scrollTrigger: {
+      trigger: ".transition8",
+      start: "top center",
+      toggleActions: "restart none reverse none",
+      end: "top 100px",
+  }
+});
+
+gsap.from(".form-transition", {
+  x: -100,
+  y: 100,
+  opacity: 0,
+  stagger: 0.8,
+  rotation: 0,
+  scrollTrigger: {
+      trigger: ".form-transition",
+      start: "top center",
+      toggleActions: "restart none reverse none",
+      end: "top 100px",
+  }
+});
+
 
 
 // gsap.from(".transition8", {
@@ -167,6 +218,7 @@ gsap.from(".transitionticker", {
   scrollTrigger: {
       trigger: ".transitionticker",
       start: "top center",
+    
       end: "top 100px",
   }
 });
