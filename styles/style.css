@@ -282,6 +282,7 @@ nav li a:hover {
 
 .hero .btn-booknow {
   padding: 1.5rem;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -300,17 +301,34 @@ nav li a:hover {
   text-align: center;
   color: white;
   text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
   cursor: pointer;
   font-size: 1.6rem;
   font-family: 'Quicksand', sans-serif;
   border: 1px solid white;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  -webkit-transition: 0.6s ease-in;
+  transition: 0.6s ease-in;
 }
 
-.hero .btn-booknow:hover {
-  background-color: white;
+.btn-booknow:hover {
   color: black;
+}
+
+.btn-booknow:before {
+  content: "";
+  position: absolute;
+  background: white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.6s ease-in;
+}
+
+.btn-booknow:hover:before {
+  top: 0;
 }
 
 video:before {
@@ -318,7 +336,7 @@ video:before {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background: black;
 }
 
 .trip-info {
@@ -590,7 +608,7 @@ hr.line {
 
 .luis-info .title {
   margin-bottom: 2rem;
-  font-size: 14rem;
+  font-size: 10rem;
   font-weight: bolder;
 }
 
@@ -1298,7 +1316,7 @@ footer ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 10rem;
+    margin-top: 25rem;
     margin-bottom: 9rem;
   }
   .hero .luis-info {
@@ -1969,8 +1987,8 @@ footer ul {
   font-size: 1.6rem;
   border: 1px solid black;
   background-color: transparent;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 #myBtn:hover {
@@ -2004,8 +2022,8 @@ footer ul {
 
 .dates-section {
   min-height: 4rem;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .dates-section:hover {
