@@ -14,7 +14,7 @@ tl.fromTo('.title', { opacity: 0 }, { opacity: 1, duration: 1.6 }, "-=1.4");
 // tl.fromTo('.title2', { opacity: 0 }, { opacity: 1, duration: 1.6 }, "-=1.4");
 // tl.fromTo('.title3', { opacity: 0 }, { opacity: 1, duration: 1.6 }, "-=1.4");
 // tl.fromTo('.luis-bio', { opacity: 0 }, { opacity: 1, duration: 1.6 }, "-=1.4");
-// tl.fromTo('.scroll', { opacity: 0 }, { opacity: 1, duration: 1.6 }, "-=1.4");
+tl.fromTo('.scroll', { opacity: 0 }, { opacity: 1, duration: 1.6 }, "-=1.4");
 // tl.fromTo('.trip-info', { opacity: 0 }, { opacity: 1, duration: 1.6 }, "-=1.4");
 
 
@@ -166,19 +166,19 @@ gsap.from(".transition8", {
   }
 });
 
-gsap.from(".form-transition", {
-  x: -100,
-  y: 100,
-  opacity: 0,
-  stagger: 0.8,
-  rotation: 0,
-  scrollTrigger: {
-      trigger: ".form-transition",
-      start: "top center",
-      toggleActions: "restart none reverse none",
-      end: "top 100px",
-  }
-});
+// gsap.from(".form-transition", {
+//   x: -100,
+//   y: 100,
+//   opacity: 0,
+//   stagger: 0.8,
+//   rotation: 0,
+//   scrollTrigger: {
+//       trigger: ".form-transition",
+//       start: "top center",
+//       toggleActions: "restart none reverse none",
+//       end: "top 100px",
+//   }
+// });
 
 
 
