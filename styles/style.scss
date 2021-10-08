@@ -503,6 +503,16 @@ hr.line{
     margin-bottom: 8rem;
 }
 
+// hr.line2{
+//     border: 1px solid black;
+//     width: 50%;
+//     margin-bottom: 8rem;
+// }
+
+
+
+
+
 // hr.nav-line{
 //     border: 0.1rem solid rgb(255, 255, 255);
 //     width: 100%;
@@ -632,6 +642,71 @@ hr.line{
     align-items: center;
     flex-wrap: wrap;
     margin-top: 12rem;
+    .paris-text{
+        text-align: center;
+        margin-top: 4rem;
+            p {
+                display: inline-block;
+                padding-bottom: 5px;
+                position: relative;
+                font-size: 2rem;
+                color: black;
+              }
+              p:before{
+                  content: "";
+                  position: absolute;
+                  width: 50%;
+                  height: 1px;
+                  bottom: 0;
+                  left: 25%;
+                  border-bottom: 1px solid rgb(0, 0, 0);
+              }
+        h4{
+            font-size: 6rem;
+            color: black;
+            margin-top: 2rem;
+        }
+        .discover{
+            margin-top: 1rem;
+            text-decoration: none;
+            font-size: 2rem;
+            border-bottom: 2px solid black;
+            padding-bottom: 1rem;
+
+        }
+    }
+}
+
+//text line under
+// .line {
+             
+//     /* Increase this as per requirement */
+//     padding-bottom: 15px;
+//     border-bottom-style: solid;
+//     border-bottom-width: 3.1px;
+//     // width: 5rem;
+// }
+
+.paris-collection{
+    text-align: center;
+    margin-top: 8rem;
+    p {
+        padding-bottom: 1rem;
+        position: relative;
+        color: black;
+        text-align: center;
+        font-size: 2rem;
+        display: inline-block;
+      }
+      p:before{
+          content: "";
+          position: absolute;
+          width: 50%;
+          height: 1px;
+          bottom: 0;
+          left: 25%;
+          border-bottom: 1px solid rgb(0, 0, 0);
+      }
 }
 
 .paris-section2{
@@ -640,7 +715,7 @@ hr.line{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 4rem;
+    margin-top: 0rem;
 }
 
 .elena1 img {
@@ -668,6 +743,7 @@ hr.line{
     
     padding:0;
     position:relative;
+
   }
 
   .section2{
@@ -685,25 +761,25 @@ hr.line{
   
   .hscroll-line {
       bottom:30px;
-      right: 50%;
+      right: 40%;
       height: 2px;
       position: absolute;
       overflow: hidden;
     width:10rem;
     transform: rotate(90deg);
-    tranform-origin:50% 50%;
+   transform-origin: 50% 50%;
    
   }
 
   .hscroll-line2 {
     bottom:30px;
-    right: 50%;
+    right: 40%;
     height: 2px;
     position: absolute;
     overflow: hidden;
   width:10rem;
   transform: rotate(90deg);
-  tranform-origin:50% 50%;
+  transform-origin: 50% 50%;
  
 }
   
@@ -798,7 +874,7 @@ hr.line{
     // max-height: 50rem;
     margin-right: 7rem;
     transition: all 0.4s ease-in-out;
-    margin-top: 14rem;
+    margin-top: 4rem;
 }
 
 .elena4 img {
@@ -810,7 +886,7 @@ hr.line{
     // max-height: 50rem;
     margin-right: 7rem;
     transition: all 0.4s ease-in-out;
-    margin-top: 14rem;
+    margin-top: 4rem;
 }
 
 .elena5 img {
@@ -822,7 +898,7 @@ hr.line{
     // max-height: 50rem;
     margin-right: 0rem;
     transition: all 0.4s ease-in-out;
-    margin-top: 14rem;
+    margin-top: 4rem;
 }
 
 .elena6 img {
@@ -877,8 +953,25 @@ hr.line{
 .europe-title{
     color: black;
     margin-right: 4rem;
-    p{
+    p {
+        padding-bottom: 1rem;
+        position: relative;
         color: black;
+        text-align: center;
+      }
+      p:before{
+          content: "";
+          position: absolute;
+          width: 30%;
+          height: 1px;
+          bottom: 0;
+          left: 35%;
+          border-bottom: 1px solid rgb(0, 0, 0);
+      }
+     h4{
+        font-size: 5rem;
+        text-align: center;
+        margin-top: 2rem;
     }
 }
 

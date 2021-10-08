@@ -697,6 +697,67 @@ hr.line {
   margin-top: 12rem;
 }
 
+.paris-section .paris-text {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.paris-section .paris-text p {
+  display: inline-block;
+  padding-bottom: 5px;
+  position: relative;
+  font-size: 2rem;
+  color: black;
+}
+
+.paris-section .paris-text p:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  bottom: 0;
+  left: 25%;
+  border-bottom: 1px solid black;
+}
+
+.paris-section .paris-text h4 {
+  font-size: 6rem;
+  color: black;
+  margin-top: 2rem;
+}
+
+.paris-section .paris-text .discover {
+  margin-top: 1rem;
+  text-decoration: none;
+  font-size: 2rem;
+  border-bottom: 2px solid black;
+  padding-bottom: 1rem;
+}
+
+.paris-collection {
+  text-align: center;
+  margin-top: 8rem;
+}
+
+.paris-collection p {
+  padding-bottom: 1rem;
+  position: relative;
+  color: black;
+  text-align: center;
+  font-size: 2rem;
+  display: inline-block;
+}
+
+.paris-collection p:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  bottom: 0;
+  left: 25%;
+  border-bottom: 1px solid black;
+}
+
 .paris-section2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -713,7 +774,7 @@ hr.line {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 4rem;
+  margin-top: 0rem;
 }
 
 .elena1 img {
@@ -760,26 +821,28 @@ hr.line {
 
 .hscroll-line {
   bottom: 30px;
-  right: 50%;
+  right: 40%;
   height: 2px;
   position: absolute;
   overflow: hidden;
   width: 10rem;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  tranform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
 }
 
 .hscroll-line2 {
   bottom: 30px;
-  right: 50%;
+  right: 40%;
   height: 2px;
   position: absolute;
   overflow: hidden;
   width: 10rem;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  tranform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
 }
 
 .hscroll-line::before,
@@ -907,7 +970,7 @@ hr.line {
   margin-right: 7rem;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  margin-top: 14rem;
+  margin-top: 4rem;
 }
 
 .elena4 img {
@@ -918,7 +981,7 @@ hr.line {
   margin-right: 7rem;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  margin-top: 14rem;
+  margin-top: 4rem;
 }
 
 .elena5 img {
@@ -929,7 +992,7 @@ hr.line {
   margin-right: 0rem;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  margin-top: 14rem;
+  margin-top: 4rem;
 }
 
 .elena6 img {
@@ -983,7 +1046,26 @@ hr.line {
 }
 
 .europe-title p {
+  padding-bottom: 1rem;
+  position: relative;
   color: black;
+  text-align: center;
+}
+
+.europe-title p:before {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 1px;
+  bottom: 0;
+  left: 35%;
+  border-bottom: 1px solid black;
+}
+
+.europe-title h4 {
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .info {
