@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -182,8 +183,10 @@ textarea {
 
 .main-head .logo a {
   margin: 2rem;
-  font-size: 3.2rem;
+  font-size: 5rem;
   color: white;
+  font-weight: bolder;
+  font-family: 'Tangerine', cursive;
 }
 
 .main-head nav ul {
@@ -1957,6 +1960,7 @@ footer ul {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 4rem;
+  padding: 2rem;
 }
 
 .skills-pic {
