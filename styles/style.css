@@ -543,7 +543,7 @@ video:before {
   font-size: 1.6rem;
   color: black;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.4rem;
   line-height: 1.7;
 }
 
@@ -552,6 +552,10 @@ video:before {
   font-size: 1.6rem;
   border-bottom: 1px solid black;
   padding-bottom: 1.6px;
+}
+
+.discover:hover {
+  color: #7e7e7e;
 }
 
 .spa-pic {
